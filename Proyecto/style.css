@@ -1,0 +1,116 @@
+/* Este se encarga del fondo principal */
+.stApp {
+    background-image: url("data:image/jpg;base64,__FONDO_BASE64__");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Este se encarga se los cuadros blancos donde va la info */
+[data-testid="stForm"], .st-emotion-cache-164784y, .stTabs {
+    background-color: #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2) !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 2rem !important;
+}
+
+/* Se encarga de los titulos sobre el fondo */
+h1, h2, .stMarkdown p {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Se encarga de los textos de los cuadros blancos */
+.stTabs h2, .stTabs p, .stTabs h3, .stTabs h4 {
+    color: #1e293b !important;
+    text-shadow: none !important;
+}
+
+/* Se encarga de los botones en doble bloque */
+[data-testid="stForm"] button {
+    background-color: #262730 !important;
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+[data-testid="stForm"] button:hover {
+    background-color: #9CA9C2 !important;
+    border-color: #8090B1 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.4) !important;
+}
+
+/* Botones fuera de bloques */
+.stButton>button {
+    background-color: #8090B1 !important;
+    color: #1e293b !important;
+    border-radius: 8px !important;
+    border: 1px solid #8090B1 !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Animacion con mouse */
+.stButton>button:hover {
+    background-color: #9CA9C2 !important;
+    border-color: #8090B1 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.4) !important;
+}
+
+/* Boton de descarga */
+.stDownloadButton>button {
+    background-color: #334155 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.stDownloadButton>button:hover {
+    background-color: #1e293b !important;
+}
+
+/* Ticket */
+[data-testid="stCodeBlock"] {
+    display: flex !important;
+    justify-content: center !important; 
+    background: transparent !important;
+}
+
+code {
+    background-color: #ffffff !important;
+    color: #000000  !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    border-radius: 6px !important;
+    border: 1px solid #ffffff !important;
+    padding: 20px !important;      
+    display: inline-block !important; 
+    width: 672px !important;     
+    text-align: center !important;    
+}
+
+/* este modifica la barra lateral */
+[data-testid="stSidebar"] {
+    background-color: #0E1117 !important;
+    border-right: 1px solid #0E1117  !important;
+}
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] p, [data-testid="stSidebar"] label {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4) !important;
+}
+
+/* este oculta los hipervinculos de los titulos */
+[data-testid="stHeaderActionElements"], .stMarkdown a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .st-key-id_nomina a {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+/* es el alineado de los textos */
+h1 p, h2 p, h3, h4 {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
